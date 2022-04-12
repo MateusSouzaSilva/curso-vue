@@ -7,9 +7,9 @@
   </div>
 </template> 
 <script>
-import PrimeiroComponente from './components/PrimeiroComponente.vue';
-import Lifecycle from './components/LifeCycle.vue';
-import Pessoa from './components/Pessoa.vue';
+import PrimeiroComponente from './components/form/PrimeiroComponente.vue';
+import Lifecycle from './components/form/LifeCycle.vue';
+import Pessoa from './components/form/Pessoa.vue';
 
 
 export default {
