@@ -11,10 +11,19 @@ export default ({
         }
     },
     created() {
+        setTimeout(() => {
         this.nome = 'Mateus'
+    }, 1000);
+    this.lifeCycle();
     },
     mounted() {
-        this.nome = 'Pedro'
+        this.nome = 'Pedro';
+        this.lifeCycle();
+    },
+    methods: {
+        lifeCycle() {
+            console.log("Executou");
+        }
     }
 
 })
