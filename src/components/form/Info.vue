@@ -14,7 +14,9 @@
                 {{ technology.language }}
             </li>
         </ul>
-
+        <div>
+            <p>{{ compEmail }}</p>
+        </div>
         <div>
             <button @click="showEmail">{{ textoBotao }}</button>
         </div>
@@ -30,12 +32,14 @@ export default {
     components: {
         Picture
     },
+    props: {
+        email: String,
+        esta_trabalhando: Boolean
+    },
     data() {
         return {
-            esta_trabalhando: false,
             mostrar_email: false,
             textoBotao: 'mostrar e-mail',
-            email: 'mateus@gmail.com',
             meu_link: 'https://google.com',
             backend_technologies:['JavaScript', 'PHP', 'Python'],
             frontend_technologies: [
